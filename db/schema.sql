@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS `diet_db`;
+CREATE DATABASE `diet_db`;
