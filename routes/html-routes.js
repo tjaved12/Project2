@@ -4,16 +4,15 @@ var path = require("path");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 module.exports = function(app) {
   app.get("/", function(req, res) {
-    // If the user already has an account send them to the members page
     if (req.user) {
-      res.redirect("/members");
+      res.render("signup", {diet_db: email });
     }
     res.render(path.join(__dirname, "../views/signup.handlebars"));
   });
   app.get("/login", function(req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
-      res.redirect("/members");
+      res.redirect("/login");
     }
     res.render(path.join(__dirname, "../views/login.handlebars"));
   });

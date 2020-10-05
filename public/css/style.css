@@ -1,0 +1,24 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+
+body{
+  background-image: url("../images/backgroundFood.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* color: white; */
+  /* text-shadow: 2px 2px 4px #181616; */
+}
+
+.btn{
+  margin: 5px;
+  box-shadow: 2px 2px 4px #000000;
+  color: black;
+}
+
+input{
+  text-shadow: 2px 2px 4px #181616; 
+}
