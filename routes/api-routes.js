@@ -46,4 +46,16 @@ module.exports = function(app) {
       });
     }
   });
+  
+  // Route for getting some data about our user to be used client side
+  app.get("/api/user_data", function(req, res) {
+  
+      // Otherwise send back the user's email and id
+      // Sending back a password, even a hashed password, isn't a good idea
+      res.json({
+        breakfast: req.day1.breakfast
+         
+      });
+    }
+  );
 };
