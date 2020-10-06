@@ -4,4 +4,8 @@ $(document).ready(function() {
   $.get("/api/user_data").then(function(data) {
     $(".member-name").text(data.email);
   });
+  $.get("/api/user_data").then(function(data) {
+  
+    $(".diet-breakfast").text(data.breakfast)
+  });
 });

@@ -7,13 +7,44 @@
     </div>
   </div>
 </nav>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
+
+      <div class="col-lg-5">
+
       <div class="col-md-5 col-md-offset-6">
+
         <h2>Welcome <span class="member-name"></span></h2>
+        <h2>Seven Days Diet-Schedule</h2>
+        
+       <br>
+       <form action="/members" method="POST">
+</form>
+      </div>
+   <div class="col-lg-4">
+     <h3> Day 1</h3>
+<li>Breakfast <span class="diet-breakfast"></span></li>
+<li>Lunch <span class="diet-lunch"></span></li>
+<li>Dinner <span class="diet-schedule"></span></li>
+        </form>
+           
+     <br><br><br>
+    </div>
+
+
+         <div class="col-lg-4">
+    <div style="margin-top:0;""margin-bottom:0"; class="jumbotron text-center">
+  
+     <h3 class="display-2">Enter your Diet Plan</h3>
+      <h4 class="mt-4"></h4>    
+
+<form action="/members" method="POST">
+  <input id ="inputSymbol"class="form-control mr-sm-4" type="text" name="task" placeholder="Enter Breakfast" aria-label="Enter type">
+	   <button type="submit" class="btn btn-primary btn-lg mt-4"> Submit</button>
+
       </div>
     </div>
   </div>
-
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>

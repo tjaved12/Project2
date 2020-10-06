@@ -2,6 +2,7 @@
 var path = require("path");
 // Requiring our custom middleware for checking if a user is logged in
 var isAuthenticated = require("../config/middleware/isAuthenticated");
+// var day1 = require("../models/days.js");
 module.exports = function(app) {
   app.get("/", function(req, res) {
     if (req.user) {
@@ -21,4 +22,12 @@ module.exports = function(app) {
   app.get("/members", isAuthenticated, function(req, res) {
     res.render(path.join(__dirname, "../views/members.handlebars"));
   });
+
+  //Posting to DB
+app.post("/members", function(req, res) {
+  day1.create(["breakfast"],[req.body.task],
+    function (result) {
+            res.redirect("/");
+    });
+});
 };
