@@ -22,3 +22,34 @@ body{
 input{
   text-shadow: 2px 2px 4px #181616; 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* MEMBERS  */
+
+.jumbotron{
+position: absolute;
+top: 50%;
+  
+}
+h2{
+  font-family: 'Dancing Script', cursive;
+
+
+
+}
+.member-name{
+
+  font-family: 'Dancing Script', cursive;
+
+
+}
+
