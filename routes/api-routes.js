@@ -2,6 +2,7 @@
 var db = require("../models");
 var passport = require("../config/passport");
 
+
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
@@ -48,14 +49,58 @@ module.exports = function(app) {
   });
   
   // Route for getting some data about our user to be used client side
-  app.get("/api/user_data", function(req, res) {
+  app.get("/api/user_diet", function(req, res) {
   
-      // Otherwise send back the user's email and id
-      // Sending back a password, even a hashed password, isn't a good idea
-      res.json({
-        breakfast: req.day1.breakfast
-         
-      });
+db.Day1.findAll({}).then(function (data) {
+    console.log('Plan',data);
+  res.json(data)
+});
+
     }
   );
+  app.get("/api/user_diet2", function(req, res) {
+      db.Day2.findAll({}).then(function (data) {
+           res.json(data)
+    });
+    
+        }
+      );
+      app.get("/api/user_diet3", function(req, res) {
+        db.Day3.findAll({}).then(function (data) {
+             res.json(data)
+      });
+      
+          }
+        );
+        app.get("/api/user_diet4", function(req, res) {
+          db.Day4.findAll({}).then(function (data) {
+               res.json(data)
+        });
+        
+            }
+          );
+          app.get("/api/user_diet5", function(req, res) {
+            db.Day5.findAll({}).then(function (data) {
+                 res.json(data)
+          });
+          
+              }
+            );
+
+            app.get("/api/user_diet6", function(req, res) {
+              db.Day6.findAll({}).then(function (data) {
+                   res.json(data)
+            });
+            
+                }
+              );
+
+              app.get("/api/user_diet7", function(req, res) {
+                db.Day7.findAll({}).then(function (data) {
+                     res.json(data)
+              });
+              
+                  }
+                );
+
 };
