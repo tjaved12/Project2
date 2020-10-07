@@ -16,10 +16,18 @@ body{
 
 .btn{
   margin: 5px;
-  box-shadow: 2px 2px 4px #000000;
-  color: black;
+  box-shadow: 2px 2px 4px #020100;
+  /* color: black; */
 }
 
-input{
+h2{
   text-shadow: 2px 2px 4px #181616; 
+}
+
+/* label{
+  text-shadow: 2px 2px 4px #181616; 
+} */
+
+.white{
+  color: white;
 }
