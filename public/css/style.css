@@ -3,6 +3,10 @@ form.login {
   margin-top: 50px;
 }
 
+.navbar{
+  background-color: rgb(85, 85, 85);
+}
+
 
 body{
   background-image: url("../images/backgroundFood.jpg");
@@ -17,17 +21,14 @@ body{
 .btn{
   margin: 5px;
   box-shadow: 2px 2px 4px #020100;
-  /* color: black; */
+  background-color: #6c757d;
 }
-
-h2{
-  text-shadow: 2px 2px 4px #181616; 
-}
-
-/* label{
-  text-shadow: 2px 2px 4px #181616; 
-} */
 
 .white{
   color: white;
+  text-shadow: 2px 2px 4px #181616;
+}
+
+.center{
+  text-align: center;
 }
