@@ -7,12 +7,19 @@ module.exports = function(sequelize, DataTypes) {
     breakfast: {
       type: DataTypes.STRING,
       allowNull: false,
-        
     },
     // The password cannot be null
+    amsnack: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     lunch: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    pmsnack: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     dinner:{
         type: DataTypes.STRING,

@@ -18,7 +18,9 @@ $(document).ready(function() {
 			}
 
 			$('.diet-breakfast').text(result.breakfast);
+			$('.diet-amsnack').text(result.amsnack);
 			$('.diet-lunch').text(result.lunch);
+			$('.diet-pmsnack').text(result.pmsnack);
 			$('.diet-dinner').text(result.dinner);
 		});
 
@@ -32,7 +34,9 @@ $(document).ready(function() {
 			}
 
 			$('.diet-breakfast2').text(result.breakfast);
+			$('.diet-amsnack2').text(result.amsnack);
 			$('.diet-lunch2').text(result.lunch);
+			$('.diet-pmsnack2').text(result.pmsnack);
 			$('.diet-dinner2').text(result.dinner);
 		});
 
@@ -46,7 +50,9 @@ $(document).ready(function() {
 			}
 
 			$('.diet-breakfast3').text(result.breakfast);
+			$('.diet-amsnack3').text(result.amsnack);
 			$('.diet-lunch3').text(result.lunch);
+			$('.diet-pmsnack3').text(result.pmsnack);
 			$('.diet-dinner3').text(result.dinner);
 		});
 
@@ -60,7 +66,9 @@ $(document).ready(function() {
 			}
 
 			$('.diet-breakfast4').text(result.breakfast);
+			$('.diet-amsnack4').text(result.amsnack);
 			$('.diet-lunch4').text(result.lunch);
+			$('.diet-pmsnack4').text(result.pmsnack);
 			$('.diet-dinner4').text(result.dinner);
 		});
 
@@ -74,7 +82,9 @@ $(document).ready(function() {
 			}
 
 			$('.diet-breakfast5').text(result.breakfast);
+			$('.diet-amsnack5').text(result.amsnack);
 			$('.diet-lunch5').text(result.lunch);
+			$('.diet-pmsnack5').text(result.pmsnack);
 			$('.diet-dinner5').text(result.dinner);
 		});
 
@@ -86,8 +96,11 @@ $(document).ready(function() {
 					break;
 				}
 			}
+
 			$('.diet-breakfast6').text(result.breakfast);
+			$('.diet-amsnack6').text(result.amsnack);
 			$('.diet-lunch6').text(result.lunch);
+			$('.diet-pmsnack6').text(result.pmsnack);
 			$('.diet-dinner6').text(result.dinner);
 		});
 
@@ -101,7 +114,9 @@ $(document).ready(function() {
 			}
 
 			$('.diet-breakfast7').text(result.breakfast);
+			$('.diet-amsnack7').text(result.amsnack);
 			$('.diet-lunch7').text(result.lunch);
+			$('.diet-pmsnack7').text(result.pmsnack);
 			$('.diet-dinner7').text(result.dinner);
 		});
 	});
