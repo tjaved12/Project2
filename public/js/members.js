@@ -167,3 +167,7 @@ $(document).ready(function() {
 
 
 // db.day1.breakfast
+
+$('#myModal').on('shown.bs.modal', function () {
+	$('#myInput').trigger('focus')
+  })
