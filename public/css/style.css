@@ -4,17 +4,16 @@ form.login {
 }
 
 .navbar{
-  background-color: rgb(85, 85, 85);
+  background-color: rgb(36, 36, 36);
+  color: white;
 }
 
 
 body{
-  background-image: url("../images/backgroundFood.jpg");
+  background-image: url("../images/backgroundFood4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* color: white; */
-  /* text-shadow: 2px 2px 4px #181616; */
   font-family: 'Courgette', cursive;
 }
 
@@ -25,10 +24,19 @@ body{
 }
 
 .white{
-  color: white;
-  text-shadow: 2px 2px 4px #181616;
+  color: rgb(255, 254, 254);
+  text-shadow: 2px 2px 4px #080808;
+}
+
+.black{
+  color: rgb(36, 36, 36);
+  text-shadow: 2px 2px 4px rgb(168, 167, 167);
 }
 
 .center{
   text-align: center;
+}
+
+li{
+  font-size: 15px;
 }
