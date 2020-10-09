@@ -17,7 +17,7 @@ VALUES(1,"Rolled Oats cooked in Milk with Raspberries", "Bell Pepper & Hummus", 
 INSERT INTO day6(id, breakfast,amsnack,lunch,pmsnack,dinner, createdAt, updatedAt)
 VALUES(1,"Bran Cereal with Skim Milk & Blueberries", "Orange", "Tuna, White Bean & Dill Salad", "Raspberries", "Toaster-Oven Tostada",NOW(), NOW());
 
-INSERT INTO day6(id, breakfast,amsnack,lunch,pmsnack,dinner, createdAt, updatedAt)
+INSERT INTO day7(id, breakfast,amsnack,lunch,pmsnack,dinner, createdAt, updatedAt)
 VALUES(1,"Avocado Egg Toast", "Raspberries", "Tuna, White Bean & Dill Salad", "Orange", "Skillet Lemon Chicken & Potatoes with Kale",NOW(), NOW());
 
 

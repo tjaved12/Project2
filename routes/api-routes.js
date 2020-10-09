@@ -102,5 +102,28 @@ db.Day1.findAll({}).then(function (data) {
               
                   }
                 );
-
+                app.put("/api/user_modify", function(req,res){
+                  // {
+                  //   id: 1,
+                  //   day: Day6,
+                  //   dinner: "steak",
+                  //   breakfast: "eggs",
+                  //   lunch: "salad",
+                  //   pmSnack: "candy",
+                  //   amSnack: "fruit"
+                  // }
+                  db[req.body.day].update({
+                    dinner: req.body.dinner,
+                    breakfast: req.body.breakfast,
+                    lunch: req.body.lunch,
+                    amsnack: req.body.amsnack,
+                    pmsnack: req.body.pmsnack
+                  }, {
+                    where: {
+                      id: req.body.id
+                    }
+                  }).then(update => { 
+                    res.send("this worked well")
+                  })
+                })
 };
