@@ -37,11 +37,11 @@ $(document).ready(function() {
 			day7 = result; 
 			
 
-			$('.diet-breakfast').text(result.breakfast);
-			$('.diet-amsnack').text(result.amsnack);
-			$('.diet-lunch').text(result.lunch);
-			$('.diet-pmsnack').text(result.pmsnack);
-			$('.diet-dinner').text(result.dinner);
+			// $('.diet-breakfast').text(result.breakfast);
+			// $('.diet-amsnack').text(result.amsnack);
+			// $('.diet-lunch').text(result.lunch);
+			// $('.diet-pmsnack').text(result.pmsnack);
+			// $('.diet-dinner').text(result.dinner);
 
 
 		});
@@ -169,6 +169,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day1
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item3 li").click(function(e) {
@@ -180,6 +182,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day1
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item4 li").click(function(e) {
@@ -191,6 +195,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day1
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item5 li").click(function(e) {
@@ -202,6 +208,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day1
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 
@@ -217,6 +225,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day2
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item7 li").click(function(e) {
@@ -230,6 +240,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day2
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item8 li").click(function(e) {
@@ -243,6 +255,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day2
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item9 li").click(function(e) {
@@ -256,6 +270,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day2
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item10 li").click(function(e) {
@@ -269,6 +285,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day2
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 
@@ -283,6 +301,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day3
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 
@@ -297,6 +317,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day3
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item11 li").click(function(e) {
@@ -310,6 +332,10 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day3
+		}).then (res=>{
+			window.location.href="/members"
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item11 li").click(function(e) {
@@ -323,6 +349,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day3
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item12 li").click(function(e) {
@@ -336,6 +364,10 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day3
+		}).then (res=>{
+			window.location.href="/members"
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item13 li").click(function(e) {
@@ -349,6 +381,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day3
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 
@@ -363,6 +397,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day3
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item15 li").click(function(e) {
@@ -376,6 +412,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day3
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item16 li").click(function(e) {
@@ -389,6 +427,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day4
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item17 li").click(function(e) {
@@ -402,6 +442,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day4
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item18 li").click(function(e) {
@@ -415,6 +457,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day4
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item19 li").click(function(e) {
@@ -428,6 +472,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day4
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 
@@ -442,6 +488,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day4
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 
@@ -456,6 +504,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day5
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 
@@ -470,6 +520,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day5
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item23 li").click(function(e) {
@@ -483,6 +535,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day5
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item24 li").click(function(e) {
@@ -496,6 +550,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day5
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item25 li").click(function(e) {
@@ -509,6 +565,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day5
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 
@@ -523,6 +581,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day6
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item27 li").click(function(e) {
@@ -536,6 +596,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day6
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item28 li").click(function(e) {
@@ -549,6 +611,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day6
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item29 li").click(function(e) {
@@ -562,6 +626,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day6
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item30 li").click(function(e) {
@@ -575,6 +641,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day6
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	
@@ -590,6 +658,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day7
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item32 li").click(function(e) {
@@ -603,6 +673,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day7
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item33 li").click(function(e) {
@@ -616,6 +688,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day7
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item34 li").click(function(e) {
@@ -629,6 +703,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day7
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	$(".dropdown-item35 li").click(function(e) {
@@ -642,6 +718,8 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day7
+		}).then (res=>{
+			window.location.href="/members"
 		})
 	})
 	;})
