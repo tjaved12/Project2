@@ -1,20 +1,6 @@
 // Import MySQL connection.
 var connection = require("./config.json");
 
-// Needed for Heroku Deploy
-if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
-}
-else {
-  connection = mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "Password",
-      database: "diet_db"
-  });
-};
-
-
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
 // In order to write the query, we need 3 question marks.
