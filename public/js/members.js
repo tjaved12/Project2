@@ -154,7 +154,11 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day1
+		
+		}).then (res=>{
+			window.location.href="/members"
 		})
+
 	})
 	$(".dropdown-item2 li").click(function(e) {
 		console.log($(this).text())	
