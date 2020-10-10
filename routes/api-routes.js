@@ -125,5 +125,6 @@ db.Day1.findAll({}).then(function (data) {
                   }).then(update => { 
                     res.send("this worked well")
                   })
+                  console.log(req.body, "BOdy")
                 })
 };
