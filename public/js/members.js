@@ -2,7 +2,14 @@ $(document).ready(function() {
 	// This file just does a GET request to figure out which user is logged in
 	// and updates the HTML on the page
 
-	let day1; 
+	let day1={}; 
+	let day2={};
+	let day3={};
+	let day4={};
+	let day5={};
+	let day6={};
+	let day7={};
+
 	$.get('/api/user_data').then(function(data) {
 		console.log(data);
 		var test = data.id;
@@ -22,6 +29,13 @@ $(document).ready(function() {
 			}
 
 			day1 = result ; 
+			day2 = result;
+			day3 = result ; 
+			day4 = result;
+			day5 = result ; 
+			day6 = result;
+			day7 = result ; 
+			
 
 			$('.diet-breakfast').text(result.breakfast);
 			$('.diet-amsnack').text(result.amsnack);
@@ -128,9 +142,7 @@ $(document).ready(function() {
 			$('.diet-dinner7').text(result.dinner);
 		});
 	});
-	// $('#myModal').on('shown.bs.modal', function () {
-	// 	$('#myInput').trigger('focus')
-	//   })
+	
 
 
 	$(".dropdown-item li").click(function(e) {
@@ -138,19 +150,7 @@ $(document).ready(function() {
 
 		console.log($(this).attr("data-day"))
 	
-		// $.put ("/api/user_modify", function(req, res) {
-		// 	day1.update(
-		// 		$('.dropdown-item1 option:selected').text(),
-		// 		$('.dropdown-item2').text(db.day1.amsnack),
-		// 		$('.dropdown-item3').text(db.day1.lunch),
-		// 		$('.dropdown-item4').text(db.day1.pmsnack),
-		// 		$('.dropdown-item5').text(db.day1.dinner),  function(result) {
-		// 		console.log(result);
-		// 		res.sendStatus(200);
-		// 		});
-		// })
-
-		console.log(day1)
+			
 
 		day1.breakfast = $(this).text(); 
 		day1.day = $(this).attr("data-day")
@@ -163,7 +163,82 @@ $(document).ready(function() {
 	})
 
 
+	$(".dropdown-item li").click(function(e) {
+		console.log($(this).text())	
+
+		console.log($(this).attr("data-day"))
+		day2.lunch = $(this).text(); 
+		day2.day = $(this).attr("data-day")
+	
+		$.ajax({
+			url: "/api/user_modify",
+			type: 'PUT',
+			data: day2
+		})
+	})
+
+	$(".dropdown-item li").click(function(e) {
+		console.log($(this).text())	
+
+		console.log($(this).attr("data-day"))
+		day3.dinner = $(this).text(); 
+		day3.day = $(this).attr("data-day")
+	
+		$.ajax({
+			url: "/api/user_modify",
+			type: 'PUT',
+			data: day3
+		})
+	})
+	$(".dropdown-item li").click(function(e) {
+		console.log($(this).text())	
+		console.log($(this).attr("data-day"))
+		day4.amsnack = $(this).text(); 
+		day4.day = $(this).attr("data-day")
+			$.ajax({
+			url: "/api/user_modify",
+			type: 'PUT',
+			data: day4
+		})
+	})
+	$(".dropdown-item li").click(function(e) {
+		console.log($(this).text())	
+		console.log($(this).attr("data-day"))
+		day5.pmsnack = $(this).text(); 
+		day5.day = $(this).attr("data-day")
+	
+		$.ajax({
+			url: "/api/user_modify",
+			type: 'PUT',
+			data: day5
+		})
+	})
+	$(".dropdown-item li").click(function(e) {
+		console.log($(this).text())	
+
+		console.log($(this).attr("data-day"))
+		day6.lunch = $(this).text(); 
+		day6.day = $(this).attr("data-day")
+		
+		$.ajax({
+			url: "/api/user_modify",
+			type: 'PUT',
+			data: day6
+		})
+	})
+	$(".dropdown-item li").click(function(e) {
+		console.log($(this).text())	
+
+		console.log($(this).attr("data-day"))
+		day7.dinner = $(this).text(); 
+		day7.day = $(this).attr("data-day")
+		
+		$.ajax({
+			url: "/api/user_modify",
+			type: 'PUT',
+			data: day7
+		})
+	})
 	;})
 
 
-// db.day1.breakfast
