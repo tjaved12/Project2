@@ -39,3 +39,7 @@ body{
 li{
   font-size: 15px;
 }
+
+.opacity2{
+  background: rgba(228, 227, 227, 0.4);
+}
