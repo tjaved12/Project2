@@ -1,6 +1,7 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
+const { create } = require("express-handlebars");
 
 
 module.exports = function(app) {
@@ -117,6 +118,25 @@ db.Day1.findAll({}).then(function (data) {
                   }).then(update => { 
                     res.send("this worked well")
                   })
-                  console.log(req.body, "BOdy")
+                  console.log(req.body, "Body")
+                })
+
+
+                app.post("/api/user_add", function(req,res){
+                 
+                  db[req.body.day].create({
+                    dinner: req.body.dinner,
+                    breakfast: req.body.breakfast,
+                    lunch: req.body.lunch,
+                    amsnack: req.body.amsnack,
+                    pmsnack: req.body.pmsnack
+                  }, {
+                    where: {
+                      id: req.body.id
+                    }
+                  }).then(create => { 
+                    res.send("this worked tooooooooo well")
+                  })
+                  console.log(req.body, "Body")
                 })
 };

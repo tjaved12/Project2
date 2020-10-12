@@ -145,26 +145,40 @@ $(document).ready(function() {
 	
 
 
-	$(".dropdown-item1 li").click(function(e) {
+	$(".dropdown-item1 li").click(function(data) {
+		data.preventDefault();
 		console.log($(this).text())	
 		console.log($(this).attr("data-day"))
+		
 		day1.breakfast = $(this).text(); 
-		day1.day = $(this).attr("data-day")
+		day1.day = $(this).attr("data-day");
+		console.log("Dayyyyy",day1)
+
+		if ((breakfast === null)){
+			$.ajax({
+				url: "/api/user_add",
+				type: 'POST',
+				data: day1
+			}).then (res=>{
+				window.location.href="/members"
+			})
+		}
+			else{
 			$.ajax({
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day1
-		
-		}).then (res=>{
-			window.location.href="/members"
-		})
-
+			}).then (res=>{
+				window.location.href="/members"
+			})
+		}
 	})
 	$(".dropdown-item2 li").click(function(e) {
 		console.log($(this).text())	
 		console.log($(this).attr("data-day"))
 		day1.amsnack = $(this).text(); 
 		day1.day = $(this).attr("data-day")
+		
 			$.ajax({
 			url: "/api/user_modify",
 			type: 'PUT',
@@ -173,19 +187,19 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
-	$(".dropdown-item3 li").click(function(e) {
-		console.log($(this).text())	
-		console.log($(this).attr("data-day"))
-		day1.lunch = $(this).text(); 
-		day1.day = $(this).attr("data-day")
-			$.ajax({
-			url: "/api/user_modify",
-			type: 'PUT',
-			data: day1
-		}).then (res=>{
-			window.location.href="/members"
-		})
-	})
+	// $(".dropdown-item3 li").click(function(e) {
+	// 	console.log($(this).text())	
+	// 	console.log($(this).attr("data-day"))
+	// 	day1.lunch = $(this).text(); 
+	// 	day1.day = $(this).attr("data-day")
+	// 		$.ajax({
+	// 		url: "/api/user_modify",
+	// 		type: 'PUT',
+	// 		data: day1
+	// 	}).then (res=>{
+	// 		window.location.href="/members"
+	// 	})
+	// })
 	$(".dropdown-item4 li").click(function(e) {
 		console.log($(this).text())	
 		console.log($(this).attr("data-day"))
@@ -722,6 +736,25 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
-	;})
 
+	
+	// $(".dropdown-item1 li").click(function(e) {
+	// 	console.log($(this).text())	
+	// 	console.log($(this).attr("data-day"))
+	// 	day1.day = $(this).attr("data-day")
+	// 	day1.breakfast = $(this).text(); 
+	
+	// 		$.ajax({
+	// 		url: "/api/user_add",
+	// 		type: 'POST',
+	// 		data: day1
+		
+	// 	}).then (res=>{
+	// 		window.location.href="/members"
+	// 	})
+
+	// })
+	
+
+})
 
