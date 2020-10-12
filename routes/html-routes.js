@@ -170,9 +170,9 @@ module.exports = function (app) {
 
   //Posting to DB
   app.post("/members", function (req, res) {
-    day1.create(["breakfast"], [req.body.task],
+    day1.create(["breakfast"], [req.body.breakfast],
       function (result) {
-        res.redirect("/");
+        res.redirect("/members");
       });
  
     });
