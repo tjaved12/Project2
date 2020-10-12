@@ -9,18 +9,18 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 module.exports = function (app) {
   app.get("/", function (req, res) {
     if (req.user) {
-      res.render("signup", {
+      res.render("login", {
         diet_db: email
       });
     }
-    res.render(path.join(__dirname, "../views/signup.handlebars"));
+    res.render(path.join(__dirname, "../views/login.handlebars"));
   });
-  app.get("/login", function (req, res) {
+  app.get("/signup", function (req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
-      res.redirect("/login");
+      res.redirect("/members");
     }
-    res.render(path.join(__dirname, "../views/login.handlebars"));
+    res.render(path.join(__dirname, "../views/signup.handlebars"));
   });
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
