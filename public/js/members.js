@@ -714,8 +714,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	});
-	})
-})
+	
 
 	
 	// $(".dropdown-item1 li").click(function(e) {
