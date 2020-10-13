@@ -65,5 +65,6 @@ N/A
 You may reach us at jennifermichelle.aguirre@gmail.com, kylebrazier@gmail.com, tahmeenaowais@yahoo.com or matthew.rikard@gmail.com for further questions.
 
 ## Screenshots
-<!-- ![screenshot1](./public/assets/images/2020-09-24.png) -->
-
+![screenshot1](./public/images/2020-10-13.png)
+![screenshot1](./public/images/2020-10-13_(1).png)
+![gifshot1](./public/images/Untitled_Oct_13_2020_10_50_AM.gif)
