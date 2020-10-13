@@ -175,18 +175,11 @@ $(document).ready(function() {
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day1
-<<<<<<< HEAD
-		}).then (res=>{
-			window.location.href="/members"
-		})
-	});
-=======
 			}).then (res=>{
 				window.location.href="/members"
 			})
-		}
+		
 	})
->>>>>>> 418b1d091cf8b11e42aa6c37a8dcd97809271292
 
 	$(".dropdown-item2 li").click(function(e) {
 	
@@ -234,12 +227,6 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
-<<<<<<< HEAD
-=======
-	
-	$(".dropdown-item5 li").click(function(e) {
-		e.preventDefault();
->>>>>>> 418b1d091cf8b11e42aa6c37a8dcd97809271292
 
 	$(".dropdown-item5 li").click(function(e) {
 				console.log($(this).text())	
@@ -269,12 +256,7 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-<<<<<<< HEAD
 	});
-=======
-	})
-
->>>>>>> 418b1d091cf8b11e42aa6c37a8dcd97809271292
 	$(".dropdown-item7 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -289,11 +271,7 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-<<<<<<< HEAD
 	});
-=======
-	})
->>>>>>> 418b1d091cf8b11e42aa6c37a8dcd97809271292
 
 	$(".dropdown-item8 li").click(function(e) {
 		console.log($(this).text())	
@@ -309,11 +287,7 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-<<<<<<< HEAD
 	});
-=======
-	})
->>>>>>> 418b1d091cf8b11e42aa6c37a8dcd97809271292
 
 	$(".dropdown-item9 li").click(function(e) {
 		console.log($(this).text())	
@@ -329,11 +303,7 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-<<<<<<< HEAD
 	});
-=======
-	})
->>>>>>> 418b1d091cf8b11e42aa6c37a8dcd97809271292
 
 	$(".dropdown-item10 li").click(function(e) {
 		console.log($(this).text())	
@@ -367,59 +337,6 @@ $(document).ready(function() {
 		})
 	})
 
-<<<<<<< HEAD
-=======
-	$(".dropdown-item11 li").click(function(e) {
-		console.log($(this).text())	
-
-		console.log($(this).attr("data-day"))
-		day3.breakfast = $(this).text(); 
-		day3.day = $(this).attr("data-day")
-	
-		$.ajax({
-			url: "/api/user_modify",
-			type: 'PUT',
-			data: day3
-		}).then (res=>{
-			window.location.href="/members"
-		})
-	})
-
-	$(".dropdown-item11 li").click(function(e) {
-		console.log($(this).text())	
-
-		console.log($(this).attr("data-day"))
-		day3.breakfast = $(this).text(); 
-		day3.day = $(this).attr("data-day")
-	
-		$.ajax({
-			url: "/api/user_modify",
-			type: 'PUT',
-			data: day3
-		}).then (res=>{
-			window.location.href="/members"
-		}).then (res=>{
-			window.location.href="/members"
-		})
-	})
-
-	$(".dropdown-item11 li").click(function(e) {
-		console.log($(this).text())	
-
-		console.log($(this).attr("data-day"))
-		day3.breakfast = $(this).text(); 
-		day3.day = $(this).attr("data-day")
-	
-		$.ajax({
-			url: "/api/user_modify",
-			type: 'PUT',
-			data: day3
-		}).then (res=>{
-			window.location.href="/members"
-		})
-	})
-
->>>>>>> 418b1d091cf8b11e42aa6c37a8dcd97809271292
 	$(".dropdown-item12 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -434,13 +351,8 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-<<<<<<< HEAD
 	});
 	
-=======
-	})
-
->>>>>>> 418b1d091cf8b11e42aa6c37a8dcd97809271292
 	$(".dropdown-item13 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -472,11 +384,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		
 	})
-<<<<<<< HEAD
 })
-=======
-
->>>>>>> 418b1d091cf8b11e42aa6c37a8dcd97809271292
 	$(".dropdown-item15 li").click(function(e) {
 		console.log($(this).text())	
 
