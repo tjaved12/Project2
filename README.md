@@ -32,13 +32,13 @@ For this project, we were tasked with creating an application using MySQL, Node,
 
 ## Installation
 
-BCYRPTJS
-Express
-Express-Handlebars
-Express-Sessions
-MYSQL2
-Passport
-Sequelize
+- BCYRPTJS
+- Express
+- Express-Handlebars
+- Express-Sessions
+- MYSQL2
+- Passport
+- Sequelize
 
 
 ## Usage
