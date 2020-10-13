@@ -32,7 +32,13 @@ For this project, we were tasked with creating an application using MySQL, Node,
 
 ## Installation
 
-N/A
+BCYRPTJS
+Express
+Express-Handlebars
+Express-Sessions
+MYSQL2
+Passport
+Sequelize
 
 
 ## Usage
@@ -56,7 +62,7 @@ N/A
 
 ## Questions
 
-You may reach us at kylebrazier@gmail.com matthew.rikard@gmail.com for further questions.
+You may reach us at kylebrazier@gmail.com, tahmeenaowais@yahoo.com or matthew.rikard@gmail.com for further questions.
 
 ## Screenshots
 <!-- ![screenshot1](./public/assets/images/2020-09-24.png) -->
