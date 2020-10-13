@@ -18,26 +18,17 @@ $(document).ready(function() {
 		//This GET request gets the data from Day1 table and updates Handlebars
 		$.get('/api/user_diet').then(function(data) {
 		
-
-			for (var i = 0; i < data.length; i++) {
+		for (var i = 0; i < data.length; i++) {
 				if (data[i].id == test) {
 					result = data[i];
 				}
 				else{
 					result=data[0]
-					
-				}
+									}
 			}
 
 			day1 = result; 
-			day2 = result;
-			day3 = result; 
-			day4 = result;
-			day5 = result; 
-			day6 = result;
-			day7 = result; 
 			
-
 			$('.diet-breakfast').text(result.breakfast);
 			$('.diet-amsnack').text(result.amsnack);
 			$('.diet-lunch').text(result.lunch);
@@ -57,6 +48,7 @@ $(document).ready(function() {
 					
 				}
 			}
+			day2 = result;
 			$('.diet-breakfast2').text(result.breakfast);
 			$('.diet-amsnack2').text(result.amsnack);
 			$('.diet-lunch2').text(result.lunch);
@@ -75,7 +67,7 @@ $(document).ready(function() {
 					
 				}
 			}
-
+			day3 = result;
 			$('.diet-breakfast3').text(result.breakfast);
 			$('.diet-amsnack3').text(result.amsnack);
 			$('.diet-lunch3').text(result.lunch);
@@ -94,6 +86,7 @@ $(document).ready(function() {
 					
 				}
 			}
+			day4 = result;
 
 			$('.diet-breakfast4').text(result.breakfast);
 			$('.diet-amsnack4').text(result.amsnack);
@@ -112,7 +105,7 @@ $(document).ready(function() {
 					
 				}
 			}
-
+			day5 = result;
 			$('.diet-breakfast5').text(result.breakfast);
 			$('.diet-amsnack5').text(result.amsnack);
 			$('.diet-lunch5').text(result.lunch);
@@ -131,7 +124,7 @@ $(document).ready(function() {
 					
 				}
 			}
-
+			day6 = result;
 			$('.diet-breakfast6').text(result.breakfast);
 			$('.diet-amsnack6').text(result.amsnack);
 			$('.diet-lunch6').text(result.lunch);
@@ -150,7 +143,7 @@ $(document).ready(function() {
 					
 				}
 			}
-
+			day7 = result;
 			$('.diet-breakfast7').text(result.breakfast);
 			$('.diet-amsnack7').text(result.amsnack);
 			$('.diet-lunch7').text(result.lunch);
@@ -387,7 +380,7 @@ $(document).ready(function() {
 
 		console.log($(this).attr("data-day"))
 		day3.dinner = $(this).text(); 
-		day3.dinner = $(this).attr("data-day")
+		day3.day = $(this).attr("data-day")
 	
 		$.ajax({
 			url: "/api/user_modify",
