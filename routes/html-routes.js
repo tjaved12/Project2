@@ -9,7 +9,7 @@ module.exports = function (app) {
 
   app.get("/", function (req, res) {
     if (req.user) {
-      res.render("login", {
+      return res.render("login", {
         diet_db: email
       });
     }
@@ -19,7 +19,7 @@ module.exports = function (app) {
   app.get("/signup", function (req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
-      res.redirect("/members");
+      return res.redirect("/members");
     }
     res.render(path.join(__dirname, "../views/signup.handlebars"));
   });
@@ -145,7 +145,7 @@ module.exports = function (app) {
       })
 
       mealPlan.day6 = newData[0]
-      res.render("members", mealPlan);
+   
     });
 
     db.Day7.findAll({
