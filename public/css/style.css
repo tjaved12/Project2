@@ -43,3 +43,7 @@ li{
 .opacity2{
   background: rgba(228, 227, 227, 0.4);
 }
+
+.right{
+  float: right;
+}

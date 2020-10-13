@@ -1,12 +1,16 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
+      <h2 class="white">QuarantineLean</h2>
+    </div>
+    <div class="right">
       <a class="navbar-brand" href="/logout">
         <p class="white">Logout</p>
       </a>
     </div>
   </div>
 </nav>
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-5"></div>
@@ -24,433 +28,502 @@
   </div>
   <div class="row">
     <div class="col-xs-5"></div>
+    {{!------ day 1 ------}}
     <div class="col-xs-3 black">
-      <h3>Day 1 </h3>
-      <li>Breakfast: <span class="diet-breakfast"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item1" href="#"><li data-day="Day1">Bran Cereal with Skim Milk & Berries </li></a>
-          <a class="dropdown-item1" href="#"><li data-day="Day1">Greek Yogurt with Blueberries, Almond & Honey </li></a>
+      <div class="card" style="width: 100%;">
+        <div class="card-header">
+          <h3 class="center">Day 1 </h3>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item opacity2">Breakfast: <span class="diet-breakfast"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item1" href="#"><li data-day="Day1">Bran Cereal with Skim Milk & Berries </li></a>
+                <a class="dropdown-item1" href="#"><li data-day="Day1">Greek Yogurt with Blueberries, Almond & Honey </li></a>
+              </ul>
+            </div>
+          </li> 
+          <li class="list-group-item opacity2">Am Snack: <span class="diet-amsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item2" href="#"><li data-day="Day1">Raspberries</li></a>
+                <a class="dropdown-item2" href="#"><li data-day="Day1">Orange</li></a>
+              </ul>
+            </div>
+          </li> 
+          <li class="list-group-item opacity2">Lunch: <span class="diet-lunch"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item3" href="#"><li data-day="Day1">Spinach & Strawberry Salad</li></a>
+                <a class="dropdown-item3" href="#"><li data-day="Day1">Tuna, White Bean & Dill Salad </li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">PM Snack: <span class="diet-pmsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item4" href="#"><li data-day="Day1">Apple</li></a>
+                <a class="dropdown-item4" href="#"><li data-day="Day1">Blueberries</li></a>
+              </ul>
+            </div>
+          </li> 
+          <li class="list-group-item opacity2">Dinner: <span class="diet-breakfast"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item5" href="#"><li data-day="Day1">Charred Shrimp & Pesto Buddha Bowls</li></a>
+                <a class="dropdown-item5" href="#"><li data-day="Day1">Curried Sweet Potato & Peanut Soup</li></a>
+              </ul>
+            </div>
+          </li>
         </ul>
-      </div>  
-      <li>Am Snack: <span class="diet-amsnack"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item2" href="#"><li data-day="Day1">Raspberries</li></a>
-          <a class="dropdown-item2" href="#"><li data-day="Day1">Orange</li></a>
-        </ul>
-      </div>  
-      <li>Lunch: <span class="diet-lunch"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item3" href="#"><li data-day="Day1">Spinach & Strawberry Salad</li></a>
-          <a class="dropdown-item3" href="#"><li data-day="Day1">Tuna, White Bean & Dill Salad </li></a>
+      </div>      
+    </div>
+    {{!------ day 2 ------}}
+    <div class="col-xs-3 black">
+      <div class="card" style="width: 100%;">
+        <div class="card-header">
+          <h3 class="center">Day 2</h3>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item opacity2">Breakfast: <span class="diet-breakfast"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item6" href="#"><li data-day="Day2">Avocado Egg Toast</li></a>
+                <a class="dropdown-item6" href="#"><li data-day="Day2">Rolled Oats cooked in Milk with Raspberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">AM Snack:  <span class="diet-amsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item7" href="#"><li data-day="Day2">Raspberries</li></a>
+                <a class="dropdown-item7" href="#"><li data-day="Day2">Bell Pepper & Hummus</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Lunch:  <span class="diet-lunch"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item8" href="#"><li data-day="Day2">Tuna, White Bean & Dill Salad</li></a>
+                <a class="dropdown-item8" href="#"><li data-day="Day2">Spinach & Strawberry Salad</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">PM Snack: <span class="diet-pmsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item9" href="#"><li data-day="Day2">Orange</li></a>
+                <a class="dropdown-item9" href="#"><li data-day="Day2">Blueberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Dinner: <span class="diet-dinner"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item10" href="#"><li data-day="Day2">Skillet Lemon Chicken & Potatoes with Kale</li></a>
+                <a class="dropdown-item10" href="#"><li data-day="Day2">Toaster-Oven Tostada</li></a>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
-      <li>PM Snack: <span class="diet-pmsnack"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item4" href="#"><li data-day="Day1">Apple</li></a>
-          <a class="dropdown-item4" href="#"><li data-day="Day1">Blueberries</li></a>
-        </ul>
-      </div>  
-      <li>Dinner: <span class="diet-breakfast"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item5" href="#"><li data-day="Day1">Charred Shrimp & Pesto Buddha Bowls</li></a>
-          <a class="dropdown-item5" href="#"><li data-day="Day1">Curried Sweet Potato & Peanut Soup</li></a>
+    </div>      
+  <div class="row">
+    <div class="col-xs-5"></div>
+    {{!------ day 3 ------}}
+    <div class="col-xs-3 black">
+      <div class="card" style="width: 100%;">
+        <div class="card-header">
+          <h3 class="center">Day 3</h3>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item opacity2">Breakfast: <span class="diet-breakfast"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item11" href="#"><li data-day="Day3">Rolled Oats cooked in Milk with Raspberries</li></a>
+                <a class="dropdown-item11" href="#"><li data-day="Day3">Avocado Egg Toast</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">AM Snack: <span class="diet-amsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item12" href="#"><li data-day="Day3">Orange</li></a>
+                <a class="dropdown-item12" href="#"><li data-day="Day3">Blueberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Lunch:  <span class="diet-lunch"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item13" href="#"><li data-day="Day3">Loaded Black Bean Nacho Soup</li></a>
+                <a class="dropdown-item13" href="#"><li data-day="Day3">Tuna, White Bean & Dill Salad</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">PM Snack:  <span class="diet-pmsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item14" href="#"><li data-day="Day3">Apple</li></a>
+                <a class="dropdown-item14" href="#"><li data-day="Day3">Raspberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Dinner:   <span class="diet-dinner"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item15" href="#"><li data-day="Day3">Cod with Tomato Cream Sauce, Brown Rice, Steamed Broccoli</li></a>
+                <a class="dropdown-item15" href="#"><li data-day="Day3">Seared Salmon with Green Peppercorn Sauce</li></a>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
-       
-    
+    {{!------ day 4 ------}}
     <div class="col-xs-3 black">
-      <h3>Day 2</h3>
-      <li>Breakfast: <span class="diet-breakfast"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item6" href="#"><li data-day="Day2">Avocado Egg Toast</li></a>
-          <a class="dropdown-item6" href="#"><li data-day="Day2">Rolled Oats cooked in Milk with Raspberries</li></a>
-        </ul>
-      </div>  
-      <li>AM Snack:<span class="diet-amsnack"></span></li>
+      <div class="card" style="width: 100%;">
+        <div class="card-header">
+          <h3 class="center">Day 4</h3>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item opacity2">Breakfast: <span class="diet-breakfast"></span>
             <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item7" href="#"><li data-day="Day2">Raspberries</li></a>
-          <a class="dropdown-item7" href="#"><li data-day="Day2">Bell Pepper & Hummus</li></a>
-        </ul>
-      </div>
-      <li>Lunch:  <span class="diet-lunch"></span></li>
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item16" href="#"><li data-day="Day4">Greek Yogurt with Blueberries, Almonds & Honey</li></a>
+                <a class="dropdown-item16" href="#"><li data-day="Day4">Avocado Egg Toast</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">AM Snack: <span class="diet-amsnack"></span>
             <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item8" href="#"><li data-day="Day2">Tuna, White Bean & Dill Salad</li></a>
-          <a class="dropdown-item8" href="#"><li data-day="Day2">Spinach & Strawberry Salad</li></a>
-        </ul>
-      </div>
-      <li>PM Snack: <span class="diet-pmsnack"></span></li>
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item17" href="#"><li data-day="Day4">Raspberries</li></a>
+                <a class="dropdown-item17" href="#"><li data-day="Day4">Bell Pepper & Hummus</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Lunch:   <span class="diet-lunch"></span>
             <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item9" href="#"><li data-day="Day2">Orange</li></a>
-          <a class="dropdown-item9" href="#"><li data-day="Day2">Blueberries</li></a>
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item18" href="#"><li data-day="Day4">Tuna, White Bean & Dill Salad</li></a>
+                <a class="dropdown-item18" href="#"><li data-day="Day4">Loaded Black Bean Nacho Soup</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">PM Snack:  <span class="diet-pmsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item19" href="#"><li data-day="Day4">Bell Pepper & Hummus</li></a>
+                <a class="dropdown-item19" href="#"><li data-day="Day4">Blueberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Dinner:   <span class="diet-dinner"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item20" href="#"><li data-day="Day4">Charred Shrimp & Pesto Buddha Bowls</li></a>
+                <a class="dropdown-item20" href="#"><li data-day="Day4">Curried Sweet Potato & Peanut Soup</li></a>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
-      <li>Dinner: <span class="diet-Dinner"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item10" href="#"><li data-day="Day2">Skillet Lemon Chicken & Potatoes with Kale</li></a>
-          <a class="dropdown-item10" href="#"><li data-day="Day2">Toaster-Oven Tostada</li></a>
-        </ul>
-      </div>
-      
-      <br><br><br>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-5"></div>
+    {{!------ day 5 ------}}
     <div class="col-xs-3 black">
-      <h3>Day 3</h3>
-      <li>Breakfast: <span class="diet-breakfast"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item11" href="#"><li data-day="Day3">Rolled Oats cooked in Milk with Raspberries</li></a>
-          <a class="dropdown-item11" href="#"><li data-day="Day3">Avocado Egg Toast</li></a>
+      <div class="card" style="width: 100%;">
+        <div class="card-header">
+          <h3 class="center">Day 5</h3>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+          <li class="list-group-item opacity2">Breakfast: <span class="diet-breakfast"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item21" href="#"><li data-day="Day5">Greek Yogurt with Blueberries, Almonds & Honey</li></a>
+                <a class="dropdown-item21" href="#"><li data-day="Day5">Bran Cereal with Skim Milk & Blueberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">AM Snack:  <span class="diet-amsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item22" href="#"><li data-day="Day5">Apple</li></a>
+                <a class="dropdown-item22" href="#"><li data-day="Day5">Raspberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Lunch: <span class="diet-lunch"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item23" href="#"><li data-day="Day5">Tuna, White Bean & Dill Salad</li></a>
+                <a class="dropdown-item23" href="#"><li data-day="Day5">Loaded Black Bean Nacho Soup</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">PM Snack: <span class="diet-pmsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item24" href="#"><li data-day="Day5">Orange</li></a>
+                <a class="dropdown-item24" href="#"><li data-day="Day5">Raspberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Dinner:  <span class="diet-dinner"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item25" href="#"><li data-day="Day5">Skillet Lemon Chicken & Potatoes with Kale</li></a>
+                <a class="dropdown-item25" href="#"><li data-day="Day5">Toaster-Oven Tostada</li></a>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
-      <li>AM Snack: <span class="diet-amsnack"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item12" href="#"><li data-day="Day3">Orange</li></a>
-          <a class="dropdown-item12" href="#"><li data-day="Day3">Blueberries</li></a>
-        </ul>
-      </div>
-      <li>Lunch:  <span class="diet-lunch"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item13" href="#"><li data-day="Day3">Loaded Black Bean Nacho Soup</li></a>
-          <a class="dropdown-item13" href="#"><li data-day="Day3">Tuna, White Bean & Dill Salad</li></a>
-        </ul>
-      </div>
-      <li>PM Snack:  <span class="diet-pmsnack"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item14" href="#"><li data-day="Day3">Apple</li></a>
-          <a class="dropdown-item14" href="#"><li data-day="Day3">Raspberries</li></a>
-        </ul>
-      </div><span class="diet-dinner"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item15" href="#"><li data-day="Day3">1. Cod with Tomato Cream Sauce, Brown Rice, Steamed Broccoli</li></a>
-          <a class="dropdown-item15" href="#"><li data-day="Day3">2. Seared Salmon with Green Peppercorn Sauce</li></a>
-        </ul>
-      </div>
-     
-     
-      <br><br><br>
     </div>
+    {{!------ day 6 ------}}
     <div class="col-xs-3 black">
-      <h3>Day 4</h3>
-      <li>Breakfast: <span class="diet-breakfast"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item16" href="#"><li data-day="Day4">Greek Yogurt with Blueberries, Almonds & Honey</li></a>
-          <a class="dropdown-item16" href="#"><li data-day="Day4">Avocado Egg Toast</li></a>
+      <div class="card" style="width: 100%;">
+        <div class="card-header">
+          <h3 class="center">Day 6</h3>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item opacity2">Breakfast: <span class="diet-breakfast"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item26" href="#"><li data-day="Day6">Rolled Oats cooked in Milk with Raspberries</li></a>
+                <a class="dropdown-item26" href="#"><li data-day="Day6">Avocado Egg Toast</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">AM Snack: <span class="diet-amsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item27" href="#"><li data-day="Day6">Apple</li></a>
+                <a class="dropdown-item27" href="#"><li data-day="Day6">Blueberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Lunch:  <span class="diet-lunch"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item28" href="#"><li data-day="Day6">Spinach & Strawberry Salad</li></a>
+                <a class="dropdown-item28" href="#"><li data-day="Day6">Loaded Black Bean Nacho Soup</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">PM Snack:   <span class="diet-pmsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item29" href="#"><li data-day="Day6">Bell Pepper & Hummus</li></a>
+                <a class="dropdown-item29" href="#"><li data-day="Day6">Orange</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Dinner:  <span class="diet-dinner"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item30" href="#"><li data-day="Day6">Apple</li></a>
+                <a class="dropdown-item30" href="#"><li data-day="Day6">Blueberries</li></a>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
-      <li>AM Snack: {<span class="diet-amsnack"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item17" href="#"><li data-day="Day4">Raspberries</li></a>
-          <a class="dropdown-item17" href="#"><li data-day="Day4">Bell Pepper & Hummus</li></a>
-        </ul>
-      </div>
-      <li>Lunch:   <span class="diet-lunch"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item18" href="#"><li data-day="Day4">Tuna, White Bean & Dill Salad</li></a>
-          <a class="dropdown-item18" href="#"><li data-day="Day4">Loaded Black Bean Nacho Soup</li></a>
-        </ul>
-      </div>
-      <li>PM Snack:  <span class="diet-pmsnack"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item19" href="#"><li data-day="Day4">Bell Pepper & Hummus</li></a>
-          <a class="dropdown-item19" href="#"><li data-day="Day4">Blueberries</li></a>
-        </ul>
-      </div>
-      <li>Dinner:   <span class="diet-dinner"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item20" href="#"><li data-day="Day4">Charred Shrimp & Pesto Buddha Bowls</li></a>
-          <a class="dropdown-item20" href="#"><li data-day="Day4">Curried Sweet Potato & Peanut Soup</li></a>
-        </ul>
-      </div>
-    
-      <br><br><br>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-5"></div>
-    <div class="col-xs-3 black">
-      <h3>Day 5</h3>
-      <li>Breakfast: <span class="diet-breakfast"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item21" href="#"><li data-day="Day5">Greek Yogurt with Blueberries, Almonds & Honey</li></a>
-          <a class="dropdown-item21" href="#"><li data-day="Day5">Bran Cereal with Skim Milk & Blueberries</li></a>
-        </ul>
-      </div>
-      <li>AM Snack:  <span class="diet-amsnack"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item22" href="#"><li data-day="Day5">Apple</li></a>
-          <a class="dropdown-item22" href="#"><li data-day="Day5">Raspberries</li></a>
-        </ul>
-      </div>
-      <li>Lunch: <span class="diet-lunch"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item23" href="#"><li data-day="Day5">Tuna, White Bean & Dill Salad</li></a>
-          <a class="dropdown-item23" href="#"><li data-day="Day5">Loaded Black Bean Nacho Soup</li></a>
-        </ul>
-      </div>
-      <li>PM Snack: <span class="diet-pmsnack"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item24" href="#"><li data-day="Day5">Orange</li></a>
-          <a class="dropdown-item24" href="#"><li data-day="Day5">Raspberries</li></a>
-        </ul>
-      </div>
-      <li>Dinner:  <span class="diet-dinner"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item25" href="#"><li data-day="Day5">Skillet Lemon Chicken & Potatoes with Kale</li></a>
-          <a class="dropdown-item25" href="#"><li data-day="Day5">Toaster-Oven Tostada</li></a>
-        </ul>
-      </div>
-      
-      <br><br><br>
-    </div>
-    <div class="col-xs-3 black">
-      <h3>Day 6</h3>
-      <li>Breakfast: <span class="diet-breakfast"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item26" href="#"><li data-day="Day6">Rolled Oats cooked in Milk with Raspberries</li></a>
-          <a class="dropdown-item26" href="#"><li data-day="Day6">Avocado Egg Toast</li></a>
-        </ul>
-      </div>
-      <li>AM Snack: <span class="diet-amsnack"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item27" href="#"><li data-day="Day6">Apple</li></a>
-          <a class="dropdown-item27" href="#"><li data-day="Day6">Blueberries</li></a>
-        </ul>
-      </div>
-      <li>Lunch:  <span class="diet-lunch"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item28" href="#"><li data-day="Day6">Spinach & Strawberry Salad</li></a>
-          <a class="dropdown-item28" href="#"><li data-day="Day6">Loaded Black Bean Nacho Soup</li></a>
-        </ul>
-      </div>
-      <li>PM Snack:   <span class="diet-pmsnack"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item29" href="#"><li data-day="Day6">Bell Pepper & Hummus</li></a>
-          <a class="dropdown-item29" href="#"><li data-day="Day6">Orange</li></a>
-        </ul>
-      </div>
-      <li>Dinner:  <span class="diet-dinner"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item30" href="#"><li data-day="Day6">Apple</li></a>
-          <a class="dropdown-item30" href="#"><li data-day="Day6">Blueberries</li></a>
-        </ul>
-      </div>
-      
-      <br><br><br>
     </div>
   </div>
   <div class="row">
+    {{!------ day 7 ------}}
     <div class="col-xs-5 col-xs-offset-6 black">
-      <h3>Day 7</h3>
-      <li>Breakfast:  <span class="diet-breakfast"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item31" href="#"><li data-day="Day7">Bran Cereal with Skim Milk & Blueberries</li></a>
-          <a class="dropdown-item31" href="#"><li data-day="Day7">Rolled Oats cooked in Milk with Raspberries</li></a>
+      <div class="card" style="width: 100%;">
+        <div class="card-header">
+          <h3 class="center">Day 7</h3>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item opacity2">Breakfast:  <span class="diet-breakfast"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item31" href="#"><li data-day="Day7">Bran Cereal with Skim Milk & Blueberries</li></a>
+                <a class="dropdown-item31" href="#"><li data-day="Day7">Rolled Oats cooked in Milk with Raspberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">AM Snack: <span class="diet-amsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item32" href="#"><li data-day="Day7">Apple</li></a>
+                <a class="dropdown-item32" href="#"><li data-day="Day7">Blueberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Lunch:  <span class="diet-lunch"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item33" href="#"><li data-day="Day7">Spinach & Strawberry Salad</li></a>
+                <a class="dropdown-item33" href="#"><li data-day="Day7">Loaded Black Bean Nacho Soup</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">PM Snack:  <span class="diet-pmsnack"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item34" href="#"><li data-day="Day7">Bell Pepper & Hummus</li></a>
+                <a class="dropdown-item34" href="#"><li data-day="Day7">Raspberries</li></a>
+              </ul>
+            </div>
+          </li>
+          <li class="list-group-item opacity2">Dinner:  <span class="diet-dinner"></span>
+            <div class="dropdown">
+              <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Edit
+              <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item35" href="#"><li data-day="Day7">Cod with Tomato Cream Sauce, Brown Rice, Steamed Broccoli</li></a>
+                <a class="dropdown-item35" href="#"><li data-day="Day7">Charred Shrimp & Pesto Buddha Bowls</li></a>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
-      <li>AM Snack: <span class="diet-amsanck"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item32" href="#"><li data-day="Day7">Apple</li></a>
-          <a class="dropdown-item32" href="#"><li data-day="Day7">Blueberries</li></a>
-        </ul>
-      </div>
-      <li>Lunch:  <span class="diet-lunch"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item33" href="#"><li data-day="Day7">Spinach & Strawberry Salad</li></a>
-          <a class="dropdown-item33" href="#"><li data-day="Day7">Loaded Black Bean Nacho Soup</li></a>
-        </ul>
-      </div>
-      <li>PM Snack:  <span class="diet-pmsnack"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item34" href="#"><li data-day="Day7">Bell Pepper & Hummus</li></a>
-          <a class="dropdown-item34" href="#"><li data-day="Day7">Raspberries</li></a>
-        </ul>
-      </div>
-      <li>Dinner:  <span class="diet-dinner7"></span></li>
-      <div class="dropdown">
-        <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-          Edit
-        <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item35" href="#"><li data-day="Day7">Cod with Tomato Cream Sauce, Brown Rice, Steamed Broccoli</li></a>
-          <a class="dropdown-item35" href="#"><li data-day="Day7">Charred Shrimp & Pesto Buddha Bowls</li></a>
-        </ul>
-      </div>
-      
-      <br><br><br>
     </div>
   </div>
 </div>
