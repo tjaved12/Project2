@@ -17,9 +17,7 @@ $(document).ready(function() {
 
 		//This GET request get the data from Day1 table and update the Handlebars
 		$.get('/api/user_diet').then(function(data) {
-			//var id = test
-			//var result = null;
-			
+		
 
 			for (var i = 0; i < data.length; i++) {
 				if (data[i].id == test) {
@@ -28,7 +26,7 @@ $(document).ready(function() {
 				}
 				else{
 					result=data[0]
-					console.log("dataaaaaa", result)
+					
 				}
 			}
 
@@ -51,11 +49,14 @@ $(document).ready(function() {
 	
 
 		$.get('/api/user_diet2').then(function(data) {
-			var result = null;
 			for (var i = 0; i < data.length; i++) {
 				if (data[i].id == test) {
 					result = data[i];
-					break;
+				
+				}
+				else{
+					result=data[0]
+					
 				}
 			}
 
@@ -67,11 +68,14 @@ $(document).ready(function() {
 		});
 
 		$.get('/api/user_diet3').then(function(data) {
-			var result = null;
 			for (var i = 0; i < data.length; i++) {
 				if (data[i].id == test) {
 					result = data[i];
-					break;
+				
+				}
+				else{
+					result=data[0]
+					
 				}
 			}
 
@@ -83,11 +87,14 @@ $(document).ready(function() {
 		});
 
 		$.get('/api/user_diet4').then(function(data) {
-			var result = null;
 			for (var i = 0; i < data.length; i++) {
 				if (data[i].id == test) {
 					result = data[i];
-					break;
+				
+				}
+				else{
+					result=data[0]
+					
 				}
 			}
 
@@ -115,11 +122,14 @@ $(document).ready(function() {
 		});
 
 		$.get('/api/user_diet6').then(function(data) {
-			var result = null;
 			for (var i = 0; i < data.length; i++) {
 				if (data[i].id == test) {
 					result = data[i];
-					break;
+				
+				}
+				else{
+					result=data[0]
+					
 				}
 			}
 
@@ -131,11 +141,14 @@ $(document).ready(function() {
 		});
 
 		$.get('/api/user_diet7').then(function(data) {
-			var result = null;
 			for (var i = 0; i < data.length; i++) {
 				if (data[i].id == test) {
 					result = data[i];
-					break;
+				
+				}
+				else{
+					result=data[0]
+					
 				}
 			}
 
@@ -150,37 +163,23 @@ $(document).ready(function() {
 
 
 	$(".dropdown-item1 li").click(function(e) {
-
-		e.preventDefault();
 		console.log($(this).text())	
+
 		console.log($(this).attr("data-day"))
 		day1.breakfast = $(this).text(); 
-		console.log(data.breakfast)
 		day1.day = $(this).attr("data-day")
-		console.log("Dayyyyy",day1)
-		console.log(day1.breakfast)
-
-		if ((data[1].breakfast !== null)){
-			$.ajax({
-				url: "/api/user_add",
-				type: 'POST',
-				data: day1
-			}).then (res=>{
-				window.location.href="/members"
-			})
-		}
-			else{
-			$.ajax({
+	
+		$.ajax({
 			url: "/api/user_modify",
 			type: 'PUT',
 			data: day1
-			}).then (res=>{
-				window.location.href="/members"
-			})
-		}
-	})
+		}).then (res=>{
+			window.location.href="/members"
+		})
+	});
+
 	$(".dropdown-item2 li").click(function(e) {
-		e.preventDefault();
+	
 
 		console.log($(this).text())	
 		console.log($(this).attr("data-day"))
@@ -194,22 +193,24 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-	})
-	// $(".dropdown-item3 li").click(function(e) {
-	// 	console.log($(this).text())	
-	// 	console.log($(this).attr("data-day"))
-	// 	day1.lunch = $(this).text(); 
-	// 	day1.day = $(this).attr("data-day")
-	// 		$.ajax({
-	// 		url: "/api/user_modify",
-	// 		type: 'PUT',
-	// 		data: day1
-	// 	}).then (res=>{
-	// 		window.location.href="/members"
-	// 	})
-	// })
+	});
+
+	$(".dropdown-item3 li").click(function(e) {
+		console.log($(this).text())	
+		console.log($(this).attr("data-day"))
+		day1.lunch = $(this).text(); 
+		day1.day = $(this).attr("data-day")
+			$.ajax({
+			url: "/api/user_modify",
+			type: 'PUT',
+			data: day1
+		}).then (res=>{
+			window.location.href="/members"
+		})
+	});
+
 	$(".dropdown-item4 li").click(function(e) {
-		e.preventDefault();
+		
 
 		console.log($(this).text())	
 		console.log($(this).attr("data-day"))
@@ -223,10 +224,9 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
-	$(".dropdown-item5 li").click(function(e) {
-		e.preventDefault();
 
-		console.log($(this).text())	
+	$(".dropdown-item5 li").click(function(e) {
+				console.log($(this).text())	
 		console.log($(this).attr("data-day"))
 		day1.dinner = $(this).text(); 
 		day1.day = $(this).attr("data-day")
@@ -237,7 +237,7 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-	})
+	});
 
 
 	$(".dropdown-item6 li").click(function(e) {
@@ -254,7 +254,7 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-	})
+	});
 	$(".dropdown-item7 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -269,7 +269,8 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-	})
+	});
+
 	$(".dropdown-item8 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -284,7 +285,8 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-	})
+	});
+
 	$(".dropdown-item9 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -299,7 +301,8 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-	})
+	});
+
 	$(".dropdown-item10 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -332,53 +335,6 @@ $(document).ready(function() {
 		})
 	})
 
-	$(".dropdown-item11 li").click(function(e) {
-		console.log($(this).text())	
-
-		console.log($(this).attr("data-day"))
-		day3.breakfast = $(this).text(); 
-		day3.day = $(this).attr("data-day")
-	
-		$.ajax({
-			url: "/api/user_modify",
-			type: 'PUT',
-			data: day3
-		}).then (res=>{
-			window.location.href="/members"
-		})
-	})
-	$(".dropdown-item11 li").click(function(e) {
-		console.log($(this).text())	
-
-		console.log($(this).attr("data-day"))
-		day3.breakfast = $(this).text(); 
-		day3.day = $(this).attr("data-day")
-	
-		$.ajax({
-			url: "/api/user_modify",
-			type: 'PUT',
-			data: day3
-		}).then (res=>{
-			window.location.href="/members"
-		}).then (res=>{
-			window.location.href="/members"
-		})
-	})
-	$(".dropdown-item11 li").click(function(e) {
-		console.log($(this).text())	
-
-		console.log($(this).attr("data-day"))
-		day3.breakfast = $(this).text(); 
-		day3.day = $(this).attr("data-day")
-	
-		$.ajax({
-			url: "/api/user_modify",
-			type: 'PUT',
-			data: day3
-		}).then (res=>{
-			window.location.href="/members"
-		})
-	})
 	$(".dropdown-item12 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -392,10 +348,9 @@ $(document).ready(function() {
 			data: day3
 		}).then (res=>{
 			window.location.href="/members"
-		}).then (res=>{
-			window.location.href="/members"
 		})
-	})
+	});
+	
 	$(".dropdown-item13 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -409,9 +364,9 @@ $(document).ready(function() {
 			data: day3
 		}).then (res=>{
 			window.location.href="/members"
-		})
+		
 	})
-
+	})
 	$(".dropdown-item14 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -425,14 +380,15 @@ $(document).ready(function() {
 			data: day3
 		}).then (res=>{
 			window.location.href="/members"
-		})
+		
 	})
+})
 	$(".dropdown-item15 li").click(function(e) {
 		console.log($(this).text())	
 
 		console.log($(this).attr("data-day"))
-		day2.dinner = $(this).text(); 
-		day2.day = $(this).attr("data-day")
+		day3.dinner = $(this).text(); 
+		day3.dinner = $(this).attr("data-day")
 	
 		$.ajax({
 			url: "/api/user_modify",
@@ -442,6 +398,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item16 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -502,12 +459,11 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
-
 	$(".dropdown-item20 li").click(function(e) {
 		console.log($(this).text())	
 
 		console.log($(this).attr("data-day"))
-		day4.dinner = $(this).text(); 
+		day4.lunch = $(this).text(); 
 		day4.day = $(this).attr("data-day")
 	
 		$.ajax({
@@ -519,11 +475,14 @@ $(document).ready(function() {
 		})
 	})
 
+
+
+
 	$(".dropdown-item21 li").click(function(e) {
 		console.log($(this).text())	
 
 		console.log($(this).attr("data-day"))
-		day5.pmsnack = $(this).text(); 
+		day5.breakfast = $(this).text(); 
 		day5.day = $(this).attr("data-day")
 	
 		$.ajax({
@@ -600,7 +559,7 @@ $(document).ready(function() {
 		console.log($(this).text())	
 
 		console.log($(this).attr("data-day"))
-		day6.dinner = $(this).text(); 
+		day6.breakfast = $(this).text(); 
 		day6.day = $(this).attr("data-day")
 	
 		$.ajax({
@@ -747,7 +706,9 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
+	});
 	})
+})
 
 	
 	// $(".dropdown-item1 li").click(function(e) {
@@ -766,8 +727,4 @@ $(document).ready(function() {
 	// 	})
 
 	// })
-	
 
-})
-
-});
