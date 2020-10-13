@@ -48,7 +48,6 @@ $(document).ready(function() {
 			$('.diet-dinner').text(result.dinner);
 
 
-	
 
 		$.get('/api/user_diet2').then(function(data) {
 			var result = null;
@@ -58,7 +57,6 @@ $(document).ready(function() {
 					break;
 				}
 			}
-
 			$('.diet-breakfast2').text(result.breakfast);
 			$('.diet-amsnack2').text(result.amsnack);
 			$('.diet-lunch2').text(result.lunch);
