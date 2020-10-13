@@ -15,16 +15,14 @@ $(document).ready(function() {
 		var test = data.id;
 		$('.member-name').text(data.email + '  ID:' + test);
 
-		//This GET request get the data from Day1 table and update the Handlebars
+		//This GET request gets the data from Day1 table and updates Handlebars
 		$.get('/api/user_diet').then(function(data) {
-			//var id = test
-			//var result = null;
-			
+			var id = test
+			var result = null;
 
 			for (var i = 0; i < data.length; i++) {
 				if (data[i].id == test) {
 					result = data[i];
-				
 				}
 				else{
 					result=data[0]
@@ -177,6 +175,7 @@ $(document).ready(function() {
 			})
 		}
 	})
+
 	$(".dropdown-item2 li").click(function(e) {
 		e.preventDefault();
 
@@ -221,6 +220,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+	
 	$(".dropdown-item5 li").click(function(e) {
 		e.preventDefault();
 
@@ -237,7 +237,6 @@ $(document).ready(function() {
 		})
 	})
 
-
 	$(".dropdown-item6 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -253,6 +252,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item7 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -268,6 +268,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item8 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -283,6 +284,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item9 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -298,6 +300,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item10 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -345,6 +348,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item11 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -362,6 +366,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item11 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -377,6 +382,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item12 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -394,6 +400,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item13 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -425,6 +432,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item15 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -440,6 +448,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item16 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -455,6 +464,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item17 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -470,6 +480,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item18 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -485,6 +496,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item19 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -548,6 +560,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item23 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -563,6 +576,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item24 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -578,6 +592,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item25 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -609,6 +624,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item27 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -624,6 +640,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item28 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -639,6 +656,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item29 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -654,6 +672,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item30 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -670,7 +689,6 @@ $(document).ready(function() {
 		})
 	})
 	
-	
 	$(".dropdown-item31 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -686,9 +704,9 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item32 li").click(function(e) {
 		console.log($(this).text())	
-
 		console.log($(this).attr("data-day"))
 		day7.amsnack = $(this).text(); 
 		day7.day = $(this).attr("data-day")
@@ -701,9 +719,9 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item33 li").click(function(e) {
 		console.log($(this).text())	
-
 		console.log($(this).attr("data-day"))
 		day7.lunch = $(this).text(); 
 		day7.day = $(this).attr("data-day")
@@ -716,9 +734,9 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item34 li").click(function(e) {
 		console.log($(this).text())	
-
 		console.log($(this).attr("data-day"))
 		day7.pmsnack = $(this).text(); 
 		day7.day = $(this).attr("data-day")
@@ -731,9 +749,9 @@ $(document).ready(function() {
 			window.location.href="/members"
 		})
 	})
+
 	$(".dropdown-item35 li").click(function(e) {
 		console.log($(this).text())	
-
 		console.log($(this).attr("data-day"))
 		day7.dinner = $(this).text(); 
 		day7.day = $(this).attr("data-day")
