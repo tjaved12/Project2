@@ -222,7 +222,7 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-	})
+	});
 
 	$(".dropdown-item5 li").click(function(e) {
 				console.log($(this).text())	
@@ -302,6 +302,7 @@ $(document).ready(function() {
 	});
 
 	$(".dropdown-item10 li").click(function(e) {
+	
 		console.log($(this).text())	
 
 		console.log($(this).attr("data-day"))
@@ -315,9 +316,9 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-	})
+	});
 
-	$(".dropdown-item11 li").click(function(e) {
+	$("dropdown-item11 li").click(function(e) {
 		console.log($(this).text())	
 
 		console.log($(this).attr("data-day"))
@@ -331,7 +332,7 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-	})
+	});
 
 	$(".dropdown-item12 li").click(function(e) {
 		console.log($(this).text())	
@@ -364,7 +365,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		
 	})
-	})
+	});
 	$(".dropdown-item14 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -380,7 +381,7 @@ $(document).ready(function() {
 			window.location.href="/members"
 		
 	})
-})
+});
 	$(".dropdown-item15 li").click(function(e) {
 		console.log($(this).text())	
 
@@ -411,7 +412,7 @@ $(document).ready(function() {
 		}).then (res=>{
 			window.location.href="/members"
 		})
-	})
+	});
 
 	$(".dropdown-item17 li").click(function(e) {
 		console.log($(this).text())	
