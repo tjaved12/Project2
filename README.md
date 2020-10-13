@@ -53,8 +53,10 @@ N/A
 
 ## Contributors
 
-Jennifer Aguirre, Kyle Brazier, Tahmeena Javed, Matt Rikard
-
+- Jennifer Aguirre
+- Kyle Brazier
+- Tahmeena Javed
+- Matt Rikard
 
 ## Tests
 
