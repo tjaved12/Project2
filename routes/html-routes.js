@@ -9,7 +9,7 @@ module.exports = function (app) {
 
   app.get("/", function (req, res) {
     if (req.user) {
-      return res.render("login", {
+      res.render("login", {
         diet_db: email
       });
     }
@@ -19,7 +19,7 @@ module.exports = function (app) {
   app.get("/signup", function (req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
-      return res.redirect("/members");
+      res.redirect("/members");
     }
     res.render(path.join(__dirname, "../views/signup.handlebars"));
   });
